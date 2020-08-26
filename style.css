@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+	background-image: url("https://blog.prezi.com/wp-content/uploads/2019/03/water_ripple-1024x683.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+
+nav{
+	background-color: #444;
+	padding: 20px;
+}
+nav h2{
+	font-family: 'Pacifico', cursive;
+}
+#nav2{
+	background-color: green;
+}
+
+#nav2 h6{
+	padding-top: 10px;
+	margin-left: 60px;
+	font-family: 'Lobster', cursive;
+}
+
+.border{
+	border: 20px groove #aaa;
+}
