@@ -29,7 +29,7 @@ $(document).ready(function(){
 	 					}
 	 				image= value.urls.regular;
 	 					
-	 					$('#img').append('<div class="col-md-6 mt-4" style="margin:auto"><div style="width: 100%; margin:auto; border: 2px red solid; border-radius:36% 99% 93% 75% / 18% 26% 14% 12% ;overflow: hidden;"><img style="height:350px; width:100%;" src="'+ image +'"></div></div>');
+	 					$('#img').append('<div class="col-md-6 mt-4" style="margin:auto"><div style="width: 100%; margin:auto; border: 2px red solid; border-radius:85% 23% 93% 42% / 14% 19% 14% 30% ;overflow: hidden;"><img style="height:350px; width:100%;" src="'+ image +'"></div></div>');
 	 						
 	 				});
 
