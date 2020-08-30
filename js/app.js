@@ -11,10 +11,11 @@ $(document).ready(function(){
 		'url':'https://api.opencagedata.com/geocode/v1/json?q='+ latitude +'+'+ longitude +'&key=4b00397a13d34c4e837db90b6dfe2188',
 		success:function(data){
 			let city=data['results']['0']['components']['city'];
+			let district = data["results"][0]["components"]["state_district"];
 			let state=data['results']['0']['components']['state'];
 			let country=data['results']['0']['components']['country'];
 				
-			$("#nav2").html("<h6>Your Current Location is&nbsp:--&nbsp&nbsp"+city + "," + state + "," + country +  ".</h6>");
+			$("#nav2").html("<h6>Your Current Location is&nbsp:--&nbsp&nbsp"+city + "," + district + ", " + state + "," + country +  ".</h6>");
 
 			$.ajax({
 				'url':'https://api.unsplash.com/search/photos?client_id=UqzOugdsGggpdT8Z0l1Nl_49YW1DP34nEN2k-uepDvM&query='+ country +'',
