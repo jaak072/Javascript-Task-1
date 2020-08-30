@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$.ajax({
 		'url':'https://api.opencagedata.com/geocode/v1/json?q='+ latitude +'+'+ longitude +'&key=4b00397a13d34c4e837db90b6dfe2188',
 		success:function(data){
-			let city=data['results']['0']['components']['city'];
+			let city=data['results']['0']['components']['county'];
 			let district = data["results"][0]["components"]["state_district"];
 			let state=data['results']['0']['components']['state'];
 			let country=data['results']['0']['components']['country'];
