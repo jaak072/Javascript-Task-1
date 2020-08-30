@@ -15,7 +15,7 @@ $(document).ready(function(){
 			let state=data['results']['0']['components']['state'];
 			let country=data['results']['0']['components']['country'];
 				
-			$("#nav2").html("<h6>Your Current Location is&nbsp:--&nbsp&nbsp"+city + "," + district + ", " + state + "," + country +  ".</h6>");
+			$("#nav2").html("<h6>Your Current Location is&nbsp:--&nbsp&nbsp" + city + "," + district + ", " + state + "," + country +  ".</h6>");
 
 			$.ajax({
 				'url':'https://api.unsplash.com/search/photos?client_id=UqzOugdsGggpdT8Z0l1Nl_49YW1DP34nEN2k-uepDvM&query='+ country +'',
